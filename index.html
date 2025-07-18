@@ -419,19 +419,29 @@
         color: var(--primary);
       }
 
-      .client-avatar {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        margin: 0 auto 1rem;
-        overflow: hidden;
-        border: 3px solid var(--accent);
-      }
+.client-avatar {
+    width: 5.5vw;
+    height: 5.5vw;
+    min-width: 60px;
+    min-height: 60px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    border: 3px solid var(--accent);
+}
 
+@media (max-width: 480px) {
+    .client-avatar {
+        border-width: 2px;
+    }
+}
       .client-avatar img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        display: block;
       }
 
       .testimonial-controls {
